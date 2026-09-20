@@ -1,0 +1,8 @@
+OK 5 files -> 114 unique chunks; all metadata propagated
+OK file doc_id versus chunk id; body-only ingestion; size bound <= 800
+OK baseline: 3 source bodies, all 3 strategies, correct counts/averages
+OK 5 queries: 3 sorted filtered results each; gold evidence chunk locations exist
+OK source/query hashes match saved run
+OK heading fallback repeats full ancestor titles; keeps body; empty/plain/fenced text handled
+LIMITATION: MockEmbedder; no semantic quality or agent-answer evaluation
+PENDING: actual team member assignments remain unconfirmed

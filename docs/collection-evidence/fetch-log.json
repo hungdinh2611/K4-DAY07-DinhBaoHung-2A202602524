@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://ofn-user-guide.gitbook.io/robots.txt",
+    "final_url": "https://guide.openfoodnetwork.org/robots.txt",
+    "status": 200,
+    "content_type": "text/plain",
+    "started_at": "2026-09-20T03:01:26.707762+00:00",
+    "finished_at": "2026-09-20T03:01:27.169354+00:00",
+    "sha256": "53aff7f942244bd03ff64d9014afc812742ce34709c5006917e87537b50b0fb0",
+    "cache_name": "robots-ofn-user-guide.gitbook.io.txt"
+  },
+  {
+    "url": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users.md",
+    "final_url": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:28.269766+00:00",
+    "finished_at": "2026-09-20T03:01:30.652675+00:00",
+    "sha256": "9c372077febfe76689a6de85b63393e9b9ad845e8bafc860389554480fcff722",
+    "cache_name": "license.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/robots.txt",
+    "final_url": "https://guide.openfoodnetwork.org/robots.txt",
+    "status": 200,
+    "content_type": "text/plain",
+    "started_at": "2026-09-20T03:01:31.752890+00:00",
+    "finished_at": "2026-09-20T03:01:31.952402+00:00",
+    "sha256": "53aff7f942244bd03ff64d9014afc812742ce34709c5006917e87537b50b0fb0",
+    "cache_name": "robots-guide.openfoodnetwork.org.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/llms.txt",
+    "final_url": "https://guide.openfoodnetwork.org/llms.txt",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:33.052989+00:00",
+    "finished_at": "2026-09-20T03:01:33.523583+00:00",
+    "sha256": "6736125d64bd9f82dc970ad4b5dde20a8cc4df700117066285c3bed0e3c6bcbc",
+    "cache_name": "index.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md",
+    "final_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:34.624169+00:00",
+    "finished_at": "2026-09-20T03:01:35.676251+00:00",
+    "sha256": "901045f60a9ee5c9babf6f2bcfb38a23f42af5662f62715660ba0e681d3186c3",
+    "cache_name": "ofn-buyer-shopping.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions.md",
+    "final_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:36.776554+00:00",
+    "finished_at": "2026-09-20T03:01:37.266216+00:00",
+    "sha256": "e3d69c812c5f6d101ee2bd94671c60c1dc696563feb642e7e475e15c7059ced3",
+    "cache_name": "ofn-buyer-faq.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders.md",
+    "final_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:38.366716+00:00",
+    "finished_at": "2026-09-20T03:01:39.118718+00:00",
+    "sha256": "dfb0bac21fb461dc3ad59ec49455c3fad9c8c7050e980e3127100a1e8478c18c",
+    "cache_name": "ofn-buyer-subscriptions.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md",
+    "final_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:40.219262+00:00",
+    "finished_at": "2026-09-20T03:01:40.719634+00:00",
+    "sha256": "e41b43ccbb0ad49acc5994174d8b9f549d6eb75d2e55f6b00c38b52125c0560e",
+    "cache_name": "ofn-seller-refunds.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md",
+    "final_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:41.820002+00:00",
+    "finished_at": "2026-09-20T03:01:43.862952+00:00",
+    "sha256": "5f1361f71de2ac1b566ee1d8f95351b3a16012cadda19c84fdf42f62a87cb7e9",
+    "cache_name": "ofn-seller-orders.txt"
+  },
+  {
+    "url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders.md",
+    "final_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders.md",
+    "status": 200,
+    "content_type": "text/markdown",
+    "started_at": "2026-09-20T03:01:44.963533+00:00",
+    "finished_at": "2026-09-20T03:01:48.804930+00:00",
+    "sha256": "3bfe1bb76145c0f122163602e3abf8f9db172e5a2747fc202f65a04f5bb24393",
+    "cache_name": "ofn-seller-subscriptions.txt"
+  }
+]

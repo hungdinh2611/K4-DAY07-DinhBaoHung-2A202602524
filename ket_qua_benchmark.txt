@@ -1,0 +1,955 @@
+CP6 backend=local; model=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2; revision=e8f8c211226b894fcb81acc59f3b34ba3efd5f42
+Agent backend: extractive paragraph quotations, not generative LLM. Scores are diagnostic, not final awarded marks.
+
+fixed_size: count=80, avg_length=768.44, totals={'naive_doc_score': 9, 'content_score': 3, 'provisional_extractive_score': 0}
+Q1 filtered: document=1/2 content=1/2 extractive=0/2
+Missing clauses: 
+  1. ofn-buyer-subscriptions#8 score=0.557253 audience=buyer
+     s 'Default' is in date.  Add a new card if necessary.
+
+### **Can I top up my order by adding extra products?**
+
+You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).
+
+If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so tha
+  2. ofn-buyer-faq#1 score=0.501816 audience=buyer
+     u visit the ‘Orders’ tab in your account it will appear as:
+
+Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+**danger:**
+You will not be able to add extra products to this basket though.
+
+**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!
+
+Just visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).
+
+If your local shop charges a small fixed fee per order for delivery/
+  3. ofn-buyer-subscriptions#10 score=0.487424 audience=buyer
+     k/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.
+
+### **I would like to change my regular order to weekly rather than fortnightly.**
+
+This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.
+
+### **I’m going on holiday and don’t want my subscription for the next two weeks.**
+
+This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+[1] You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).
+
+[1] If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so tha
+
+[2] If your local shop charges a small fixed fee per order for delivery/
+
+[2] u visit the ‘Orders’ tab in your account it will appear as:
+
+[3] k/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.
+Q1 unfiltered: document=0/2 content=0/2 extractive=0/2
+Missing clauses: cannot add to existing basket, new checkout
+  1. ofn-seller-subscriptions#3 score=0.591010 audience=seller
+     bscriptions** in the sub-menu.
+
+Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.
+
+**danger:**
+You must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).
+
+### Basic Details
+
+**Customer:** Select a customer from the drop-down list. You can only choose from those people added to the [Customer List](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#add-your-subscribers-to-your-customer-list) for the Enterprise with which you are creating the subscription.
+
+**Schedule:** Select th
+  2. ofn-seller-orders#8 score=0.589024 audience=seller
+      where you can edit, modify and cancel an order.
+
+This is what the order management page looks like:
+
+#### **Adding and removing products from an order**
+
+You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+**Changing the Shipping Method**
+
+A customer may contact you and ask to have their groceries de
+  3. ofn-seller-subscriptions#5 score=0.577897 audience=seller
+     ted for that order cycle. If not, their first subscription order will be placed when the next order cycle to open in their schedule begins.
+
+**Ends at:** After this date the customer’s subscription orders will no longer be generated. This field is optional, if left blank the order will continue to be generate indefinitely.
+
+**danger:**
+If the 'Ends at' date falls in the middle of a future order cycle then no subscription order will be placed.For example:
+
+* If Ends at date is 10/01/2020 but closest order cycle in this customer's schedule is due to open 9/01/2020 and close 11/01/2020 then no order will be generated for the customer.
+* If Ends at date is 12/01/2020 then the above order cycle will generate a last subscription order for the customer.
+
+### Address
+
+Fill out the customer’s billi
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.
+
+[2] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+[3] ted for that order cycle. If not, their first subscription order will be placed when the next order cycle to open in their schedule begins.
+
+[3] **Ends at:** After this date the customer’s subscription orders will no longer be generated. This field is optional, if left blank the order will continue to be generate indefinitely.
+
+[2] This is what the order management page looks like:
+
+[2] where you can edit, modify and cancel an order.
+Q2 filtered: document=2/2 content=2/2 extractive=0/2
+Missing clauses: 
+  1. ofn-seller-refunds#12 score=0.628067 audience=seller
+     you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+
+**danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+**warning:**
+Note that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.
+
+#### PayPal
+**You can not issue a partial refund to a customer who paid by PayPal automatically via the OFN platform at present.**
+
+1. You will need to log into your business [PayPal account](https://www.paypal.com/uk/home) and refund the customer the correct amount through their interface.
+2. To record this action you will need to set up a new [Payment Method](https://guide.openfoodnetwork.org/basic-features/shopfront/payment-methods.md) as follows:
+   Name= 
+  2. ofn-seller-refunds#10 score=0.609469 audience=seller
+     mbering that for **a refund**,  the value needs to be a **negative number**. When finished, click ‘continue’:
+
+**success:**
+You can use ‘Adjustments’ to partially refund a customer for a substandard product.
+
+Once the order has been amended to reflect either the missing/adjusted products or the new adjustment, the order will appear with the payment state of **‘Credit Owing’** for the amount the customer no longer needs to pay.
+
+**Process the Partial Refund**
+To process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:
+
+#### Cash/BACS
+
+1. Arrange for the refund to be made to the customer independently of the platform.
+2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu,
+  3. ofn-seller-refunds#8 score=0.551658 audience=seller
+     fund
+
+To issue a partial refund, you must first edit the order to change the balance owing. There are two main ways to [edit an order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) when you want to issue a partial refund. You can adjust item quantities, or make an adjustment:
+
+**1. Edit the quantity of an item** by going to[ Orders -> edit ](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#adding-and-removing-products-from-an-order)order and clicking on the ‘edit’ icon next to the item (highlighted in red below) or delete the item completely using the 'bin' icon (highlighted in green below):
+
+Or you can *reduce* the quantity by editing the quantity value, remembering to click the 'tick' button to save your changes:
+
+Select **
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] **danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+[1] you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+
+[2] **Process the Partial Refund**
+To process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:
+
+[2] 1. Arrange for the refund to be made to the customer independently of the platform.
+2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu,
+
+[2] mbering that for **a refund**,  the value needs to be a **negative number**. When finished, click ‘continue’:
+
+[2] **success:**
+You can use ‘Adjustments’ to partially refund a customer for a substandard product.
+Q3 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: refund before cancelling
+  1. ofn-seller-refunds#6 score=0.634203 audience=seller
+     w-orders.md#listing-orders) the order appears as:
+
+'Payment state = paid'
+
+Going to the 'payments' screen from Orders -> Edit will show the payment method used:
+
+**danger:**
+**Orders placed and paid for via PayPal can not be refunded through the OFN platform.**
+
+To refund the customer you will need to log into your [PayPal account](https://www.paypal.com/uk/home) and issue the money back to the customer’s account through Paypal's interface.
+
+Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.
+
+#### Marking an order as cancelled
+
+Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.or
+  2. ofn-seller-refunds#7 score=0.631921 audience=seller
+      you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).
+
+**success:**
+The customer will receive an email to state that their order has been cancelled.
+
+**info:**
+Cancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.
+
+**danger:**
+Note that you cannot cancel an order which has been marked as ‘Shipped’
+
+### Partial Refund
+
+To issue a partial refund, you must first edit the order to change the bal
+  3. ofn-seller-refunds#0 score=0.631877 audience=seller
+     # Refunds and Adjusting Payments
+
+From time to time, a customer may request that their order is adjusted such as adding or removing an item.
+
+On other occasions you as a business manager may need to change an order. Common scenarios include:
+
+1. A product was not delivered by a supplier
+2. A product was of lower quality than expected
+3. An order contains products with variable weights such as [meat or large vegetables](https://guide.openfoodnetwork.org/basic-features/products-1/pricing-irregular-items-kg.md#option-one-set-an-average-weight-price-and-reimburse) (i.e. whole items priced by weight).
+
+The process of issuing a refund or requesting further payment depends on the [payment method](https://guide.openfoodnetwork.org/basic-features/shopfront/payment-methods.md) employed.
+
+**warning:*
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] **danger:**
+Note that you cannot cancel an order which has been marked as ‘Shipped’
+
+[1] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.or
+
+[2] **success:**
+The customer will receive an email to state that their order has been cancelled.
+
+[1] Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.
+
+[3] From time to time, a customer may request that their order is adjusted such as adding or removing an item.
+
+[2] **info:**
+Cancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.
+Q4 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: price can change
+  1. ofn-buyer-subscriptions#2 score=0.700381 audience=buyer
+     .
+* The frequency which you would like the order (weekly, fortnightly, monthly…)
+* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).
+
+**info:**
+You will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.
+
+## **Paying for a Subscription by card**
+
+If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription w
+  2. ofn-buyer-subscriptions#6 score=0.576401 audience=buyer
+     y your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+
+### I have received an email stating that the payment for my subscription order failed. What should I do?
+
+From time to time, if you pay for your subscription by card, you may receive the following email. Don't worry!
+
+#### What to do next:
+
+* Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.
+* Before your next order, [log into your OFN account](https://guide.openfoodne
+  3. ofn-buyer-subscriptions#3 score=0.483728 audience=buyer
+     d tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:
+
+**warning:**
+If you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.
+
+**warning:**
+If you **change your default card** then it will be necessary to re-check the 'Allow Charges to Default Card' box under' Authorised Shops to for payments for any subscriptions you have with those shops to be processed.
+
+## **What to expect**
+
+Every time an order is automatically generated for you, an email will be sent to inform you of its contents.  If one of the items in your subscription is not in stock that week/month (perhaps the baker is ill and is unable to bake bread) then the quantity 
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] y your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+
+[3] **warning:**
+If you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.
+
+[2] From time to time, if you pay for your subscription by card, you may receive the following email. Don't worry!
+
+[1] If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription w
+
+[2] * Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.
+* Before your next order, [log into your OFN account](https://guide.openfoodne
+
+[3] **warning:**
+If you **change your default card** then it will be necessary to re-check the 'Allow Charges to Default Card' box under' Authorised Shops to for payments for any subscriptions you have with those shops to be processed.
+Q5 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: editable fields, recreate schedule
+  1. ofn-seller-subscriptions#3 score=0.689189 audience=seller
+     bscriptions** in the sub-menu.
+
+Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.
+
+**danger:**
+You must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).
+
+### Basic Details
+
+**Customer:** Select a customer from the drop-down list. You can only choose from those people added to the [Customer List](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#add-your-subscribers-to-your-customer-list) for the Enterprise with which you are creating the subscription.
+
+**Schedule:** Select th
+  2. ofn-seller-subscriptions#6 score=0.689172 audience=seller
+     subscription order for the customer.
+
+### Address
+
+Fill out the customer’s billing and shipping details. Address details for customers who have placed orders on OFN previously will load automatically.
+
+**warning:**
+If you update the customer's address/contact details in the [Customer](https://guide.openfoodnetwork.org/basic-features/shopfront/customer-management-and-conditional-displays-prices/customers.md) page, the change won't automatically carry through to their subscription.  You will need to update their details here too.
+
+### **Add Products**
+
+Add the items the customer wishes to receive from your enterprise on a regular basis.
+
+**warning:**
+You can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription s
+  3. ofn-seller-subscriptions#8 score=0.679147 audience=seller
+      will receive an email with a summary of their order, including up-to-date prices.
+
+#### **What if a product in a subscription is not available in an order cycle?**
+
+When an item in a subscription is not available (for example if it is a seasonal product) the customer will be alerted in their confirmation emails.
+
+## Edit a customer’s subscription
+
+### Edit the base subscription
+
+To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+Select the enterprise with which the customer has a subscription from the drop-down menu.
+
+A table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:
+
+**success:**
+You can c
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[3] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+[2] **warning:**
+If you update the customer's address/contact details in the [Customer](https://guide.openfoodnetwork.org/basic-features/shopfront/customer-management-and-conditional-displays-prices/customers.md) page, the change won't automatically carry through to their subscription.  You will need to update their details here too.
+
+[2] subscription order for the customer.
+
+[1] Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.
+
+[1] **danger:**
+You must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).
+
+[2] **warning:**
+You can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription s
+
+recursive: count=87, avg_length=637.64, totals={'naive_doc_score': 9, 'content_score': 3, 'provisional_extractive_score': 1}
+Q1 filtered: document=2/2 content=2/2 extractive=0/2
+Missing clauses: 
+  1. ofn-buyer-faq#1 score=0.639242 audience=buyer
+     Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+**danger:**
+You will not be able to add extra products to this basket though.
+
+**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!
+
+Just visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).
+
+
+  2. ofn-buyer-subscriptions#5 score=0.511508 audience=buyer
+     Some shops may allow customers to remove items from their orders or cancel them altogether, within a limited time frame.  In which case you will be sent two emails. The first will notify you that your automated order has been placed and give you a link to follow if you wish to change your order:
+
+**warning:**
+Adding to your basket by following this link will generate a second order and you will be directed to the checkout to pay for your additional items separately from those in your subscription.
+
+
+  3. ofn-buyer-subscriptions#11 score=0.480342 audience=buyer
+     ### **I would like to add/remove X from my regular order**
+
+This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.
+
+### **I would like to change my regular order to weekly rather than fortnightly.**
+
+This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.
+
+### **I’m going on holiday and don’t want my subscription for the next two weeks.**
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+[2] Some shops may allow customers to remove items from their orders or cancel them altogether, within a limited time frame.  In which case you will be sent two emails. The first will notify you that your automated order has been placed and give you a link to follow if you wish to change your order:
+
+[2] **warning:**
+Adding to your basket by following this link will generate a second order and you will be directed to the checkout to pay for your additional items separately from those in your subscription.
+
+[3] This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.
+
+[3] This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.
+
+[1] **danger:**
+You will not be able to add extra products to this basket though.
+Q1 unfiltered: document=0/2 content=0/2 extractive=0/2
+Missing clauses: cannot add to existing basket, new checkout
+  1. ofn-seller-subscriptions#7 score=0.701289 audience=seller
+     ### **Add Products**
+
+Add the items the customer wishes to receive from your enterprise on a regular basis.
+
+**warning:**
+You can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.
+
+### Review & Save
+
+Check that details are correct and then click **Create Subscription** or **Cancel**.
+
+**warning:**
+If the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.
+
+#### **What happens if the price of a product changes after the subscription is made?**
+
+
+  2. ofn-seller-orders#10 score=0.650638 audience=seller
+     This is what the order management page looks like:
+
+#### **Adding and removing products from an order**
+
+You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+**Changing the Shipping Method**
+
+
+  3. ofn-seller-orders#16 score=0.646371 audience=seller
+     We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:
+
+**Start/End Date:** You can filter to display all orders that were placed within a given window of time.
+
+**Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] **warning:**
+You can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.
+
+[2] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+[3] We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:
+
+[1] **warning:**
+If the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.
+
+[2] This is what the order management page looks like:
+
+[1] Add the items the customer wishes to receive from your enterprise on a regular basis.
+Q2 filtered: document=1/2 content=0/2 extractive=0/2
+Missing clauses: 3-5 working days
+  1. ofn-seller-orders#15 score=0.600967 audience=seller
+     * grant a discount on an order if a product is damaged
+* deduct credit owed to the customer from their total balance
+* refund a customer
+* record a partial payment
+* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders
+
+## Bulk order management
+
+
+  2. ofn-seller-refunds#12 score=0.596713 audience=seller
+     **info:**
+The button for **+ New Payment** will only be visible if you have already added an adjustment (e.g. the payment state is 'credit owed')
+
+#### Stripe
+Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.
+
+1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.
+2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+
+**danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+
+  3. ofn-seller-refunds#11 score=0.551331 audience=seller
+     Once the order has been amended to reflect either the missing/adjusted products or the new adjustment, the order will appear with the payment state of **‘Credit Owing’** for the amount the customer no longer needs to pay.
+
+**Process the Partial Refund**
+To process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:
+
+#### Cash/BACS
+
+1. Arrange for the refund to be made to the customer independently of the platform.
+2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu, then '**+ New Payment**':
+
+Enter a **negative value** in the ‘Amount’ field to record the refund as having been made.
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] **danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+[3] **Process the Partial Refund**
+To process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:
+
+[3] 1. Arrange for the refund to be made to the customer independently of the platform.
+2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu, then '**+ New Payment**':
+
+[1] * grant a discount on an order if a product is damaged
+* deduct credit owed to the customer from their total balance
+* refund a customer
+* record a partial payment
+* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders
+
+[2] Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.
+
+[2] 1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.
+2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+Q3 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: cannot cancel Shipped, refund before cancelling
+  1. ofn-seller-refunds#3 score=0.706415 audience=seller
+     **The customer has not yet paid for the item.**
+If a customer places an order, selecting a payment method such as cash on collection or BACS and the payment has not been captured on the system it will appear as 'payment state: balance due':
+
+You can [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) straight away following the steps below for 'Marking an order as cancelled'.
+
+**The customer has paid for the item.**
+
+When [viewing orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as 'payment state: paid' and the 'Shipment State: Ready':
+
+
+  2. ofn-seller-refunds#7 score=0.667020 audience=seller
+     To refund the customer you will need to log into your [PayPal account](https://www.paypal.com/uk/home) and issue the money back to the customer’s account through Paypal's interface.
+
+Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.
+
+#### Marking an order as cancelled
+
+Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).
+
+**success:**
+The customer will receive an email to state that their order has been cancelled.
+
+
+  3. ofn-seller-refunds#6 score=0.650633 audience=seller
+     Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).
+
+#### PayPal
+Payment is collected automatically on checkout from the customer and so in [listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as:
+
+'Payment state = paid'
+
+Going to the 'payments' screen from Orders -> Edit will show the payment method used:
+
+**danger:**
+**Orders placed and paid for via PayPal can not be refunded through the OFN platform.**
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[3] Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).
+
+[2] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).
+
+[2] **success:**
+The customer will receive an email to state that their order has been cancelled.
+
+[1] You can [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) straight away following the steps below for 'Marking an order as cancelled'.
+
+[2] Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.
+
+[3] Payment is collected automatically on checkout from the customer and so in [listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as:
+Q4 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: price can change
+  1. ofn-buyer-subscriptions#6 score=0.661163 audience=buyer
+     When orders close for that week/fortnight/month, you will be sent a second email confirming your final order contents and informing you that payment has been taken (if you are paying for your subscription by card- payment will not be automatically taken if you pay for your subscription by cash or bank transfer).
+
+## **Common questions**
+
+### **I pay by card for my subscription. When will the payment be taken?**
+
+The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+
+
+  2. ofn-buyer-subscriptions#2 score=0.620974 audience=buyer
+     * The email address associated with your OFN account.
+* The items you would like to purchase on a regular basis.
+* Your preferred collection/delivery time/day for your regular order.
+* Your preferred method of payment for your regular order.
+* The frequency which you would like the order (weekly, fortnightly, monthly…)
+* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).
+
+**info:**
+You will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.
+
+## **Paying for a Subscription by card**
+
+
+  3. ofn-buyer-subscriptions#8 score=0.591075 audience=buyer
+     * Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.
+* Before your next order, [log into your OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#whats-in-your-account) and visit the 'Credit Cards' tab.  In the UK you can follow this link: <https://openfoodnetwork.org.uk/account#/cards>
+* Check that the 'Allow Charges to Default Card' box is checked next to the business with whom you have a subscription.
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] When orders close for that week/fortnight/month, you will be sent a second email confirming your final order contents and informing you that payment has been taken (if you are paying for your subscription by card- payment will not be automatically taken if you pay for your subscription by cash or bank transfer).
+
+[3] * Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.
+* Before your next order, [log into your OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#whats-in-your-account) and visit the 'Credit Cards' tab.  In the UK you can follow this link: <https://openfoodnetwork.org.uk/account#/cards>
+* Check that the 'Allow Charges to Default Card' box is checked next to the business with whom you have a subscription.
+
+[1] The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+
+[2] * The email address associated with your OFN account.
+* The items you would like to purchase on a regular basis.
+* Your preferred collection/delivery time/day for your regular order.
+* Your preferred method of payment for your regular order.
+* The frequency which you would like the order (weekly, fortnightly, monthly…)
+* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).
+
+[2] **info:**
+You will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.
+Q5 filtered: document=2/2 content=1/2 extractive=1/2
+Missing clauses: 
+  1. ofn-seller-subscriptions#8 score=0.713389 audience=seller
+     The prices of items within subscriptions will update and the customer will be charged according to the updated price.  At the start of each order cycle with which their subscription is generated they will receive an email with a summary of their order, including up-to-date prices.
+
+#### **What if a product in a subscription is not available in an order cycle?**
+
+When an item in a subscription is not available (for example if it is a seasonal product) the customer will be alerted in their confirmation emails.
+
+## Edit a customer’s subscription
+
+### Edit the base subscription
+
+To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+
+  2. ofn-seller-subscriptions#7 score=0.683311 audience=seller
+     ### **Add Products**
+
+Add the items the customer wishes to receive from your enterprise on a regular basis.
+
+**warning:**
+You can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.
+
+### Review & Save
+
+Check that details are correct and then click **Create Subscription** or **Cancel**.
+
+**warning:**
+If the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.
+
+#### **What happens if the price of a product changes after the subscription is made?**
+
+
+  3. ofn-seller-subscriptions#9 score=0.678102 audience=seller
+     Select the enterprise with which the customer has a subscription from the drop-down menu.
+
+A table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:
+
+**success:**
+You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.
+
+**danger:**
+You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.
+
+### Edit one specific order
+
+If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.
+
+
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[3] **danger:**
+You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.
+
+[3] **success:**
+You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.
+
+[1] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+[1] The prices of items within subscriptions will update and the customer will be charged according to the updated price.  At the start of each order cycle with which their subscription is generated they will receive an email with a summary of their order, including up-to-date prices.
+
+[3] If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.
+
+[2] **warning:**
+If the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.
+
+heading: count=114, avg_length=548.25, totals={'naive_doc_score': 10, 'content_score': 8, 'provisional_extractive_score': 6}
+Q1 filtered: document=2/2 content=2/2 extractive=2/2
+Missing clauses: 
+  1. ofn-buyer-faq#1 score=0.590996 audience=buyer
+     # Frequently Asked Questions
+### **Can I change my order?**
+
+Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+**danger:**
+You will not be able to add extra products to this basket though.
+
+**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!
+
+Just visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).
+  2. ofn-buyer-subscriptions#13 score=0.575224 audience=buyer
+     # Subscription Orders
+## **Common questions**
+### **Can I top up my order by adding extra products?**
+
+If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so that you are not paying twice!
+  3. ofn-buyer-subscriptions#12 score=0.556295 audience=buyer
+     # Subscription Orders
+## **Common questions**
+### **Can I top up my order by adding extra products?**
+
+You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.
+
+[3] You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).
+
+[2] If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so that you are not paying twice!
+
+[1] **danger:**
+You will not be able to add extra products to this basket though.
+
+[1] Just visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).
+
+[1] **BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!
+Q1 unfiltered: document=0/2 content=0/2 extractive=0/2
+Missing clauses: cannot add to existing basket, new checkout
+  1. ofn-seller-orders#12 score=0.646152 audience=seller
+     # Manage Orders
+## Listing orders
+### **Editing an order**
+#### **Adding and removing products from an order**
+
+You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+**Changing the Shipping Method**
+  2. ofn-seller-orders#18 score=0.643120 audience=seller
+     # Manage Orders
+## Listing orders
+### **Additional options available under 'Actions'**
+#### **Modify an Order or Record Partial Payment**
+
+Click on 'Adjustments' in the right hand menu (screen shot above).  On this page you can add or subtract from the order total by selecting the **+ New Adjustment button**.
+
+You may wish to use this functionality to:
+
+* grant a discount on an order if a product is damaged
+* deduct credit owed to the customer from their total balance
+* refund a customer
+* record a partial payment
+* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders
+  3. ofn-seller-orders#19 score=0.642468 audience=seller
+     # Manage Orders
+## Bulk order management
+
+We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:
+
+**Start/End Date:** You can filter to display all orders that were placed within a given window of time.
+
+**Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).
+
+[3] We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:
+
+[2] Click on 'Adjustments' in the right hand menu (screen shot above).  On this page you can add or subtract from the order total by selecting the **+ New Adjustment button**.
+
+[2] * grant a discount on an order if a product is damaged
+* deduct credit owed to the customer from their total balance
+* refund a customer
+* record a partial payment
+* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders
+
+[3] **Start/End Date:** You can filter to display all orders that were placed within a given window of time.
+
+[3] **Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.
+Q2 filtered: document=2/2 content=2/2 extractive=0/2
+Missing clauses: 
+  1. ofn-seller-refunds#18 score=0.670191 audience=seller
+     # Refunds and Adjusting Payments
+## Refunds
+### Partial Refund
+#### Stripe
+
+Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.
+
+1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.
+2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+
+**danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+**warning:**
+Note that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.
+  2. ofn-seller-refunds#21 score=0.611988 audience=seller
+     # Refunds and Adjusting Payments
+## Collecting Additional Payments
+
+Follow the steps above for [Partial refunds](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#partial-refund) to add extra items to a customer's order or make adjustments via the [Bulk Order Management](https://guide.openfoodnetwork.org/basic-features/products-1/group-buy-for-bulk-ordering.md#adjusting-orders-to-make-complete-batches) page.
+
+Orders will now display with the Payment State = ‘Balance Due’:
+
+To record payment of the extra monies due visit [Orders -> Edit Order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and then ‘Payments’.
+Select **+ New Payment** (top right hand blue button)
+  3. ofn-seller-refunds#8 score=0.608015 audience=seller
+     # Refunds and Adjusting Payments
+## Refunds
+### Total Refund
+#### Stripe
+
+**info:**
+Note that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.
+
+Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] **danger:**
+Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.
+
+[2] Follow the steps above for [Partial refunds](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#partial-refund) to add extra items to a customer's order or make adjustments via the [Bulk Order Management](https://guide.openfoodnetwork.org/basic-features/products-1/group-buy-for-bulk-ordering.md#adjusting-orders-to-make-complete-batches) page.
+
+[1] Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.
+
+[1] 1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.
+2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.
+
+[3] Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).
+
+[2] To record payment of the extra monies due visit [Orders -> Edit Order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and then ‘Payments’.
+Select **+ New Payment** (top right hand blue button)
+Q3 filtered: document=2/2 content=0/2 extractive=0/2
+Missing clauses: refund before cancelling
+  1. ofn-seller-refunds#12 score=0.756579 audience=seller
+     # Refunds and Adjusting Payments
+## Refunds
+### Total Refund
+#### Marking an order as cancelled
+
+**danger:**
+Note that you cannot cancel an order which has been marked as ‘Shipped’
+  2. ofn-seller-orders#10 score=0.656203 audience=seller
+     # Manage Orders
+## Listing orders
+### **Changing the Payment and Shipment state of an order**
+#### Capturing a Payment
+
+**danger:**
+When a shop or hub manager updates the 'Shipment state' to 'shipped' ***this will automatically send the customer an email*** to say that their products have been shipped, irrespective of the shipping method. Hence it can cause confusion for orders due to be collected (rather than shipped).
+Another source of potential confusion to be aware of is when customers pay for an order on collection. Updating the payment (and then shipping) status of the order after the goods have been collected will send an email to the customer, even though they have their goods in practice.
+  3. ofn-seller-refunds#11 score=0.636774 audience=seller
+     # Refunds and Adjusting Payments
+## Refunds
+### Total Refund
+#### Marking an order as cancelled
+
+Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).
+
+**success:**
+The customer will receive an email to state that their order has been cancelled.
+
+**info:**
+Cancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[1] **danger:**
+Note that you cannot cancel an order which has been marked as ‘Shipped’
+
+[3] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).
+
+[3] **success:**
+The customer will receive an email to state that their order has been cancelled.
+
+[2] **danger:**
+When a shop or hub manager updates the 'Shipment state' to 'shipped' ***this will automatically send the customer an email*** to say that their products have been shipped, irrespective of the shipping method. Hence it can cause confusion for orders due to be collected (rather than shipped).
+Another source of potential confusion to be aware of is when customers pay for an order on collection. Updating the payment (and then shipping) status of the order after the goods have been collected will send an email to the customer, even though they have their goods in practice.
+
+[3] **info:**
+Cancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.
+Q4 filtered: document=2/2 content=2/2 extractive=2/2
+Missing clauses: 
+  1. ofn-buyer-subscriptions#8 score=0.697874 audience=buyer
+     # Subscription Orders
+## **Common questions**
+### **I pay by card for my subscription. When will the payment be taken?**
+
+The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+  2. ofn-buyer-subscriptions#3 score=0.627128 audience=buyer
+     # Subscription Orders
+## **Paying for a Subscription by card**
+
+If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:
+
+**warning:**
+If you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.
+  3. ofn-buyer-subscriptions#19 score=0.613861 audience=buyer
+     # Subscription Orders
+## **Common questions**
+### **Will the cost of my subscription remain the same forever?**
+
+No. The cost of your subscription will fluctuate based on the current price of the items within it.  This is to ensure small producers always receive a fair price for their products.
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:
+
+[2] **warning:**
+If you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.
+
+[1] The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.
+
+[3] No. The cost of your subscription will fluctuate based on the current price of the items within it.  This is to ensure small producers always receive a fair price for their products.
+Q5 filtered: document=2/2 content=2/2 extractive=2/2
+Missing clauses: 
+  1. ofn-seller-subscriptions#12 score=0.784510 audience=seller
+     # Subscriptions - Creating & Managing orders
+## Edit a customer’s subscription
+### Edit the base subscription
+
+To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+Select the enterprise with which the customer has a subscription from the drop-down menu.
+
+A table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:
+
+**success:**
+You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.
+  2. ofn-seller-subscriptions#13 score=0.721849 audience=seller
+     # Subscriptions - Creating & Managing orders
+## Edit a customer’s subscription
+### Edit the base subscription
+
+**danger:**
+You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.
+  3. ofn-seller-subscriptions#14 score=0.698062 audience=seller
+     # Subscriptions - Creating & Managing orders
+## Edit a customer’s subscription
+### Edit one specific order
+
+If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.
+
+This will reveal all upcoming orders in the schedule, and you can then edit a specific order.
+
+**warning:**
+Note that you will be able to remove items from an order in this manner, but not add them. Additional items will need to be added by creating a new order as described [here](https://guide.openfoodnetwork.org/basic-features/orders/create-orders-manually.md).
+Agent quotations:
+Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):
+[2] **danger:**
+You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.
+
+[1] **success:**
+You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.
+
+[1] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).
+
+[3] If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.
+
+[1] A table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:
+
+[3] This will reveal all upcoming orders in the schedule, and you can then edit a specific order.

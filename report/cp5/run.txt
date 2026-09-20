@@ -1,0 +1,74 @@
+Strategy: HeadingChunker {'chunk_size': 800}
+Embedding backend: MockEmbedder (64D); execution check only, NOT semantic quality.
+Loaded 5 files -> 114 chunks
+Chunks by audience: {'buyer': 36, 'seller': 78}
+
+Q1: Can I add a new product to an order that has already been placed?
+Filter: {'audience': 'buyer'}
+Gold: As a buyer, contact the shop to change an order. For cash-on-collection or bank-transfer purchases, the shop may allow an OFN account holder to edit quantities or remove products for a limited time. A new product cannot be added to that existing basket: place a separate order and check out again. Contact the shop about removing a duplicate fixed delivery/collection fee.
+  1. score=0.215863 doc_id=ofn-buyer-subscriptions chunk_id=ofn-buyer-subscriptions#9
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders
+     # Subscription Orders ## **Common questions** ### I have received an email stating that the payment for my subscription order failed. What should I do?  From time to time, if you pay for your subscription by card, you may receive the follow
+  2. score=0.194736 doc_id=ofn-buyer-faq chunk_id=ofn-buyer-faq#11
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions
+     # Frequently Asked Questions ### **Will my basket be saved if I get called away and can’t complete my shopping in one go?**  If you logged into your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-ac
+  3. score=0.176217 doc_id=ofn-buyer-subscriptions chunk_id=ofn-buyer-subscriptions#8
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders
+     # Subscription Orders ## **Common questions** ### **I pay by card for my subscription. When will the payment be taken?**  The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will
+Unfiltered top-3 (diagnostic only): ofn-seller-orders#21 [seller], ofn-seller-orders#20 [seller], ofn-seller-refunds#9 [seller]
+
+Q2: How does a seller issue a partial Stripe refund, what does the X button do, and how long can the refund take to appear?
+Filter: {'audience': 'seller'}
+Gold: First amend the order or add a negative adjustment to produce Credit Owed. In Orders -> Edit Order -> Payments, click the tick next to the payment to refund the credit owed. X voids the entire payment and gives a full refund. Stripe payments can take 3-5 working days to appear on the customer's bank statement.
+  1. score=0.321266 doc_id=ofn-seller-refunds chunk_id=ofn-seller-refunds#1
+     source=https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments
+     # Refunds and Adjusting Payments  **warning:** On the OFN platform, refunds and additional payments can only be made **automatically** using the [Payment Method](https://guide.openfoodnetwork.org/basic-features/shopfront/payment-methods.md)
+  2. score=0.286506 doc_id=ofn-seller-subscriptions chunk_id=ofn-seller-subscriptions#10
+     source=https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders
+     # Subscriptions - Creating & Managing orders ## Create subscriptions ### Review & Save #### **What happens if the price of a product changes after the subscription is made?**  The prices of items within subscriptions will update and the cus
+  3. score=0.247596 doc_id=ofn-seller-orders chunk_id=ofn-seller-orders#6
+     source=https://guide.openfoodnetwork.org/basic-features/orders/view-orders
+     # Manage Orders ## Listing orders ### **Changing the Payment and Shipment state of an order**  Next to each order in the Order list are two icons. Clicking on the edit icon (a pencil and paper symbol) will open up details of the order so th
+Unfiltered top-3 (diagnostic only): ofn-seller-refunds#1 [seller], ofn-seller-subscriptions#10 [seller], ofn-seller-orders#6 [seller]
+
+Q3: Can a seller cancel an order marked Shipped, and should refunds be processed before cancellation?
+Filter: {'audience': 'seller'}
+Gold: An order marked Shipped cannot be cancelled. Process refunds or adjustments before cancelling: a cancelled order cannot be edited or refunded.
+  1. score=0.260747 doc_id=ofn-seller-refunds chunk_id=ofn-seller-refunds#0
+     source=https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments
+     # Refunds and Adjusting Payments  From time to time, a customer may request that their order is adjusted such as adding or removing an item.  On other occasions you as a business manager may need to change an order. Common scenarios include
+  2. score=0.236104 doc_id=ofn-seller-orders chunk_id=ofn-seller-orders#22
+     source=https://guide.openfoodnetwork.org/basic-features/orders/view-orders
+     # Manage Orders ## Bulk order management ### Examples of using Bulk Order Management: #### Example 1: You have a stock shortage, and must reduce customer order quantities for a certain product.  *In your current order cycle, customers place
+  3. score=0.224984 doc_id=ofn-seller-orders chunk_id=ofn-seller-orders#17
+     source=https://guide.openfoodnetwork.org/basic-features/orders/view-orders
+     # Manage Orders ## Listing orders ### **Additional options available under 'Actions'** #### **View customer details**  Customer information (email, billing, shipping addresses and phone numbers) are accessible from the menu on the right of 
+Unfiltered top-3 (diagnostic only): ofn-buyer-subscriptions#15 [buyer], ofn-seller-refunds#0 [seller], ofn-buyer-faq#10 [buyer]
+
+Q4: When is card payment taken for a subscription, and is the subscription price fixed forever?
+Filter: {'audience': 'buyer'}
+Gold: The subscription order is placed when its order cycle opens; card payment is taken when the cycle closes. The subscription price reflects current item prices and can fluctuate rather than staying at its original price.
+  1. score=0.178489 doc_id=ofn-buyer-faq chunk_id=ofn-buyer-faq#8
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions
+     # Frequently Asked Questions ### **I would like to order a large number of the same product.**  If you would like to buy a large quantity of one product then pop one in your basket by clicking on the orange ‘Add’ button.  Then click on your
+  2. score=0.169998 doc_id=ofn-buyer-subscriptions chunk_id=ofn-buyer-subscriptions#15
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders
+     # Subscription Orders ## **Common questions** ### **I would like to add/remove X from my regular order**  This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnet
+  3. score=0.152779 doc_id=ofn-buyer-subscriptions chunk_id=ofn-buyer-subscriptions#17
+     source=https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders
+     # Subscription Orders ## **Common questions** ### **I’m going on holiday and don’t want my subscription for the next two weeks.**  This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](
+Unfiltered top-3 (diagnostic only): ofn-seller-refunds#7 [seller], ofn-seller-subscriptions#8 [seller], ofn-seller-orders#21 [seller]
+
+Q5: List the subscription details a seller can edit. How must a change to the subscription schedule be handled?
+Filter: {'audience': 'seller'}
+Gold: A seller can change subscription products, preferred shipping and payment methods, and start/end dates. The schedule cannot be changed directly: recreate the subscription in the preferred schedule and delete the old version.
+  1. score=0.286170 doc_id=ofn-seller-subscriptions chunk_id=ofn-seller-subscriptions#12
+     source=https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders
+     # Subscriptions - Creating & Managing orders ## Edit a customer’s subscription ### Edit the base subscription  To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -
+  2. score=0.272022 doc_id=ofn-seller-refunds chunk_id=ofn-seller-refunds#2
+     source=https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments
+     # Refunds and Adjusting Payments ## Refunds  Using the OFN Platform you can process a [total refund](#total-refund), which refunds the entirety of the order, or a [partial refund](#partial-refund), which you might use when an item was not a
+  3. score=0.271978 doc_id=ofn-seller-subscriptions chunk_id=ofn-seller-subscriptions#6
+     source=https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders
+     # Subscriptions - Creating & Managing orders ## Create subscriptions ### Basic Details  **danger:** If the 'Ends at' date falls in the middle of a future order cycle then no subscription order will be placed.For example:  * If Ends at date 
+Unfiltered top-3 (diagnostic only): ofn-seller-subscriptions#12 [seller], ofn-seller-refunds#2 [seller], ofn-seller-subscriptions#6 [seller]

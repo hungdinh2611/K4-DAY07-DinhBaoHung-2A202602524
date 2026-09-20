@@ -1,0 +1,27 @@
+{
+  "description": "Frozen before CP6 scoring. Each query requires ALL groups; a group accepts ANY literal variant after Markdown/whitespace normalization. Only the listed source document counts. This is conservative answer-content coverage, not an LLM judge.",
+  "queries": {
+    "Q1": [
+      {"label":"cannot add to existing basket", "doc_id":"ofn-buyer-faq", "any":["You will not be able to add extra products to this basket though."]},
+      {"label":"new checkout", "doc_id":"ofn-buyer-faq", "any":["which you forgot to get in your first order and proceed through checkout as normal"]}
+    ],
+    "Q2": [
+      {"label":"adjust balance first", "doc_id":"ofn-seller-refunds", "any":["To issue a partial refund, you must first edit the order to change the balance owing.","As you created the adjustment in the previous step, the payment screen will now say 'Credit Owed'"]},
+      {"label":"tick refunds credit owed", "doc_id":"ofn-seller-refunds", "any":["By clicking the tick next to the payment any credit owed to the customer will be automatically refunded."]},
+      {"label":"X refunds whole payment", "doc_id":"ofn-seller-refunds", "any":["Clicking the 'X' will void the whole payment and issue a full refund to the customer."]},
+      {"label":"3-5 working days", "doc_id":"ofn-seller-refunds", "any":["Stripe payments can take 3-5 working days to appear on a customer's bank statement."]}
+    ],
+    "Q3": [
+      {"label":"cannot cancel Shipped", "doc_id":"ofn-seller-refunds", "any":["you cannot cancel an order which has been marked as 'Shipped'"]},
+      {"label":"refund before cancelling", "doc_id":"ofn-seller-orders", "any":["It is important to process any refunds or adjustments to an order before cancelling it. A cancelled order can not be edited or refunded."]}
+    ],
+    "Q4": [
+      {"label":"payment at cycle close", "doc_id":"ofn-buyer-subscriptions", "any":["Payment will be taken when the order cycle closes."]},
+      {"label":"price can change", "doc_id":"ofn-buyer-subscriptions", "any":["The cost of your subscription will fluctuate based on the current price of the items within it.","The cost of your subscription will reflect the current cost and not the cost when the subscription was first created."]}
+    ],
+    "Q5": [
+      {"label":"editable fields", "doc_id":"ofn-seller-subscriptions", "any":["You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription."]},
+      {"label":"recreate schedule", "doc_id":"ofn-seller-subscriptions", "any":["You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted."]}
+    ]
+  }
+}

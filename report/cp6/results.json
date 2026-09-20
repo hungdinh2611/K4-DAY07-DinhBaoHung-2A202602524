@@ -1,0 +1,1971 @@
+{
+  "run_at": "2026-09-20T04:57:01.503598+00:00",
+  "backend": "local",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "max_seq_length": 256,
+  "queries_sha256": "0c5106af3c8236fd2dbb0cc3fc3225c40d6198efbd06caaa4440caba5f432372",
+  "checks_sha256": "53678dfe24894d2df71f19cd7dae6a5f655dd3042d01df4e3f2adbc866662db2",
+  "corpus_sha256": {
+    "ofn-buyer-faq": "588cc04aefcb7455e6252a4eb633ed73b0a647353fb8924cfbfded362ea2e786",
+    "ofn-buyer-subscriptions": "3166577142433a4c9eca7728acca71a1ce276657f5d807f1866dfe14530fbabe",
+    "ofn-seller-orders": "24564734485f80e1c2c9762b8e3fed3f0e17f8ffb53a3e78b76d79c6955e8c80",
+    "ofn-seller-refunds": "fadb3eaa59bee8c634c70523afcd95e89d453f39dcad9555d80960f2a22c9e15",
+    "ofn-seller-subscriptions": "16b5f3ff2436df0d239b1da156680c4916e0aa45d68182f8f4df48161930a5a7"
+  },
+  "answer_backend": "extractive paragraph ranking; NOT a generative LLM; no gold in prompt",
+  "results": {
+    "fixed_size": {
+      "count": 80,
+      "avg_length": 768.4375,
+      "parameters": {
+        "chunk_size": 800,
+        "overlap": 80
+      },
+      "queries": {
+        "Q1": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-subscriptions#8",
+                "content": "s 'Default' is in date.  Add a new card if necessary.\n\n### **Can I top up my order by adding extra products?**\n\nYou can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).\n\nIf your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so tha",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 8
+                },
+                "score": 0.5572526576588918
+              },
+              {
+                "id": "ofn-buyer-faq#1",
+                "content": "u visit the ‘Orders’ tab in your account it will appear as:\n\nClicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n**danger:**\nYou will not be able to add extra products to this basket though.\n\n**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!\n\nJust visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).\n\nIf your local shop charges a small fixed fee per order for delivery/",
+                "metadata": {
+                  "doc_id": "ofn-buyer-faq",
+                  "title": "Frequently Asked Questions",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Selected complete FAQ sections",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-faq.md",
+                  "chunk_index": 1
+                },
+                "score": 0.5018156248828249
+              },
+              {
+                "id": "ofn-buyer-subscriptions#10",
+                "content": "k/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.\n\n### **I would like to change my regular order to weekly rather than fortnightly.**\n\nThis is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.\n\n### **I’m going on holiday and don’t want my subscription for the next two weeks.**\n\nThis is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 10
+                },
+                "score": 0.48742353460976584
+              }
+            ],
+            "doc_rank": 2,
+            "naive_doc_score": 1,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "new checkout",
+                "ranks": [
+                  2
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 1,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n[1] You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).\n\n[1] If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so tha\n\n[2] If your local shop charges a small fixed fee per order for delivery/\n\n[2] u visit the ‘Orders’ tab in your account it will appear as:\n\n[3] k/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          },
+          "unfiltered": {
+            "top3": [
+              {
+                "id": "ofn-seller-subscriptions#3",
+                "content": "bscriptions** in the sub-menu.\n\nClick **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.\n\n**danger:**\nYou must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).\n\n### Basic Details\n\n**Customer:** Select a customer from the drop-down list. You can only choose from those people added to the [Customer List](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#add-your-subscribers-to-your-customer-list) for the Enterprise with which you are creating the subscription.\n\n**Schedule:** Select th",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 3
+                },
+                "score": 0.5910103247285142
+              },
+              {
+                "id": "ofn-seller-orders#8",
+                "content": " where you can edit, modify and cancel an order.\n\nThis is what the order management page looks like:\n\n#### **Adding and removing products from an order**\n\nYou can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n**Changing the Shipping Method**\n\nA customer may contact you and ask to have their groceries de",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 8
+                },
+                "score": 0.5890236381315183
+              },
+              {
+                "id": "ofn-seller-subscriptions#5",
+                "content": "ted for that order cycle. If not, their first subscription order will be placed when the next order cycle to open in their schedule begins.\n\n**Ends at:** After this date the customer’s subscription orders will no longer be generated. This field is optional, if left blank the order will continue to be generate indefinitely.\n\n**danger:**\nIf the 'Ends at' date falls in the middle of a future order cycle then no subscription order will be placed.For example:\n\n* If Ends at date is 10/01/2020 but closest order cycle in this customer's schedule is due to open 9/01/2020 and close 11/01/2020 then no order will be generated for the customer.\n* If Ends at date is 12/01/2020 then the above order cycle will generate a last subscription order for the customer.\n\n### Address\n\nFill out the customer’s billi",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 5
+                },
+                "score": 0.577897222405997
+              }
+            ],
+            "doc_rank": null,
+            "naive_doc_score": 0,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": []
+              },
+              {
+                "label": "new checkout",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.\n\n[2] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n[3] ted for that order cycle. If not, their first subscription order will be placed when the next order cycle to open in their schedule begins.\n\n[3] **Ends at:** After this date the customer’s subscription orders will no longer be generated. This field is optional, if left blank the order will continue to be generate indefinitely.\n\n[2] This is what the order management page looks like:\n\n[2] where you can edit, modify and cancel an order.",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [
+              "ofn-seller-subscriptions#3",
+              "ofn-seller-orders#8",
+              "ofn-seller-subscriptions#5"
+            ],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q2": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-refunds#12",
+                "content": "you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.\n\n**danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n**warning:**\nNote that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.\n\n#### PayPal\n**You can not issue a partial refund to a customer who paid by PayPal automatically via the OFN platform at present.**\n\n1. You will need to log into your business [PayPal account](https://www.paypal.com/uk/home) and refund the customer the correct amount through their interface.\n2. To record this action you will need to set up a new [Payment Method](https://guide.openfoodnetwork.org/basic-features/shopfront/payment-methods.md) as follows:\n   Name= ",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 12
+                },
+                "score": 0.6280668333492574
+              },
+              {
+                "id": "ofn-seller-refunds#10",
+                "content": "mbering that for **a refund**,  the value needs to be a **negative number**. When finished, click ‘continue’:\n\n**success:**\nYou can use ‘Adjustments’ to partially refund a customer for a substandard product.\n\nOnce the order has been amended to reflect either the missing/adjusted products or the new adjustment, the order will appear with the payment state of **‘Credit Owing’** for the amount the customer no longer needs to pay.\n\n**Process the Partial Refund**\nTo process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:\n\n#### Cash/BACS\n\n1. Arrange for the refund to be made to the customer independently of the platform.\n2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu,",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 10
+                },
+                "score": 0.609468849628857
+              },
+              {
+                "id": "ofn-seller-refunds#8",
+                "content": "fund\n\nTo issue a partial refund, you must first edit the order to change the balance owing. There are two main ways to [edit an order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) when you want to issue a partial refund. You can adjust item quantities, or make an adjustment:\n\n**1. Edit the quantity of an item** by going to[ Orders -> edit ](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#adding-and-removing-products-from-an-order)order and clicking on the ‘edit’ icon next to the item (highlighted in red below) or delete the item completely using the 'bin' icon (highlighted in green below):\n\nOr you can *reduce* the quantity by editing the quantity value, remembering to click the 'tick' button to save your changes:\n\nSelect **",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 8
+                },
+                "score": 0.551658318013085
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "adjust balance first",
+                "ranks": [
+                  3
+                ]
+              },
+              {
+                "label": "tick refunds credit owed",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "X refunds whole payment",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "3-5 working days",
+                "ranks": [
+                  1
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] **danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n[1] you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.\n\n[2] **Process the Partial Refund**\nTo process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:\n\n[2] 1. Arrange for the refund to be made to the customer independently of the platform.\n2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu,\n\n[2] mbering that for **a refund**,  the value needs to be a **negative number**. When finished, click ‘continue’:\n\n[2] **success:**\nYou can use ‘Adjustments’ to partially refund a customer for a substandard product.",
+            "answer_group_coverage": [
+              false,
+              true,
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q3": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-refunds#6",
+                "content": "w-orders.md#listing-orders) the order appears as:\n\n'Payment state = paid'\n\nGoing to the 'payments' screen from Orders -> Edit will show the payment method used:\n\n**danger:**\n**Orders placed and paid for via PayPal can not be refunded through the OFN platform.**\n\nTo refund the customer you will need to log into your [PayPal account](https://www.paypal.com/uk/home) and issue the money back to the customer’s account through Paypal's interface.\n\nOnce this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.\n\n#### Marking an order as cancelled\n\nOnce you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.or",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 6
+                },
+                "score": 0.6342029752530675
+              },
+              {
+                "id": "ofn-seller-refunds#7",
+                "content": " you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).\n\n**success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n**info:**\nCancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.\n\n**danger:**\nNote that you cannot cancel an order which has been marked as ‘Shipped’\n\n### Partial Refund\n\nTo issue a partial refund, you must first edit the order to change the bal",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 7
+                },
+                "score": 0.631921246850987
+              },
+              {
+                "id": "ofn-seller-refunds#0",
+                "content": "# Refunds and Adjusting Payments\n\nFrom time to time, a customer may request that their order is adjusted such as adding or removing an item.\n\nOn other occasions you as a business manager may need to change an order. Common scenarios include:\n\n1. A product was not delivered by a supplier\n2. A product was of lower quality than expected\n3. An order contains products with variable weights such as [meat or large vegetables](https://guide.openfoodnetwork.org/basic-features/products-1/pricing-irregular-items-kg.md#option-one-set-an-average-weight-price-and-reimburse) (i.e. whole items priced by weight).\n\nThe process of issuing a refund or requesting further payment depends on the [payment method](https://guide.openfoodnetwork.org/basic-features/shopfront/payment-methods.md) employed.\n\n**warning:*",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 0
+                },
+                "score": 0.6318765351264972
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "cannot cancel Shipped",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "refund before cancelling",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] **danger:**\nNote that you cannot cancel an order which has been marked as ‘Shipped’\n\n[1] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.or\n\n[2] **success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n[1] Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.\n\n[3] From time to time, a customer may request that their order is adjusted such as adding or removing an item.\n\n[2] **info:**\nCancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.",
+            "answer_group_coverage": [
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q4": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-subscriptions#2",
+                "content": ".\n* The frequency which you would like the order (weekly, fortnightly, monthly…)\n* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).\n\n**info:**\nYou will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.\n\n## **Paying for a Subscription by card**\n\nIf you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription w",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 2
+                },
+                "score": 0.7003806036977461
+              },
+              {
+                "id": "ofn-buyer-subscriptions#6",
+                "content": "y your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.\n\n### I have received an email stating that the payment for my subscription order failed. What should I do?\n\nFrom time to time, if you pay for your subscription by card, you may receive the following email. Don't worry!\n\n#### What to do next:\n\n* Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.\n* Before your next order, [log into your OFN account](https://guide.openfoodne",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 6
+                },
+                "score": 0.5764014101353424
+              },
+              {
+                "id": "ofn-buyer-subscriptions#3",
+                "content": "d tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:\n\n**warning:**\nIf you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.\n\n**warning:**\nIf you **change your default card** then it will be necessary to re-check the 'Allow Charges to Default Card' box under' Authorised Shops to for payments for any subscriptions you have with those shops to be processed.\n\n## **What to expect**\n\nEvery time an order is automatically generated for you, an email will be sent to inform you of its contents.  If one of the items in your subscription is not in stock that week/month (perhaps the baker is ill and is unable to bake bread) then the quantity ",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 3
+                },
+                "score": 0.4837281634126401
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "payment at cycle close",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "price can change",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] y your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.\n\n[3] **warning:**\nIf you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.\n\n[2] From time to time, if you pay for your subscription by card, you may receive the following email. Don't worry!\n\n[1] If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription w\n\n[2] * Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.\n* Before your next order, [log into your OFN account](https://guide.openfoodne\n\n[3] **warning:**\nIf you **change your default card** then it will be necessary to re-check the 'Allow Charges to Default Card' box under' Authorised Shops to for payments for any subscriptions you have with those shops to be processed.",
+            "answer_group_coverage": [
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q5": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-subscriptions#3",
+                "content": "bscriptions** in the sub-menu.\n\nClick **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.\n\n**danger:**\nYou must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).\n\n### Basic Details\n\n**Customer:** Select a customer from the drop-down list. You can only choose from those people added to the [Customer List](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#add-your-subscribers-to-your-customer-list) for the Enterprise with which you are creating the subscription.\n\n**Schedule:** Select th",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 3
+                },
+                "score": 0.6891888398637178
+              },
+              {
+                "id": "ofn-seller-subscriptions#6",
+                "content": "subscription order for the customer.\n\n### Address\n\nFill out the customer’s billing and shipping details. Address details for customers who have placed orders on OFN previously will load automatically.\n\n**warning:**\nIf you update the customer's address/contact details in the [Customer](https://guide.openfoodnetwork.org/basic-features/shopfront/customer-management-and-conditional-displays-prices/customers.md) page, the change won't automatically carry through to their subscription.  You will need to update their details here too.\n\n### **Add Products**\n\nAdd the items the customer wishes to receive from your enterprise on a regular basis.\n\n**warning:**\nYou can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription s",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 6
+                },
+                "score": 0.6891720773327835
+              },
+              {
+                "id": "ofn-seller-subscriptions#8",
+                "content": " will receive an email with a summary of their order, including up-to-date prices.\n\n#### **What if a product in a subscription is not available in an order cycle?**\n\nWhen an item in a subscription is not available (for example if it is a seasonal product) the customer will be alerted in their confirmation emails.\n\n## Edit a customer’s subscription\n\n### Edit the base subscription\n\nTo make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\nSelect the enterprise with which the customer has a subscription from the drop-down menu.\n\nA table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:\n\n**success:**\nYou can c",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 8
+                },
+                "score": 0.679146769384707
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "editable fields",
+                "ranks": []
+              },
+              {
+                "label": "recreate schedule",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[3] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\n[2] **warning:**\nIf you update the customer's address/contact details in the [Customer](https://guide.openfoodnetwork.org/basic-features/shopfront/customer-management-and-conditional-displays-prices/customers.md) page, the change won't automatically carry through to their subscription.  You will need to update their details here too.\n\n[2] subscription order for the customer.\n\n[1] Click **+ New Subscription** to setup a recurring order for your customer.  You will first be prompted to select the shop with which you wish to create the new subscription.\n\n[1] **danger:**\nYou must have created a schedule of order cycles before you can create a subscription. Read more [here](https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-configuration.md#schedules).\n\n[2] **warning:**\nYou can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription s",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        }
+      },
+      "inputs_over_model_limit": 0
+    },
+    "recursive": {
+      "count": 87,
+      "avg_length": 637.6436781609195,
+      "parameters": {
+        "separators": [
+          "\n\n",
+          "\n",
+          ". ",
+          " ",
+          ""
+        ],
+        "chunk_size": 800
+      },
+      "queries": {
+        "Q1": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-faq#1",
+                "content": "Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n**danger:**\nYou will not be able to add extra products to this basket though.\n\n**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!\n\nJust visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-faq",
+                  "title": "Frequently Asked Questions",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Selected complete FAQ sections",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-faq.md",
+                  "chunk_index": 1
+                },
+                "score": 0.6392420188137362
+              },
+              {
+                "id": "ofn-buyer-subscriptions#5",
+                "content": "Some shops may allow customers to remove items from their orders or cancel them altogether, within a limited time frame.  In which case you will be sent two emails. The first will notify you that your automated order has been placed and give you a link to follow if you wish to change your order:\n\n**warning:**\nAdding to your basket by following this link will generate a second order and you will be directed to the checkout to pay for your additional items separately from those in your subscription.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 5
+                },
+                "score": 0.5115078859007065
+              },
+              {
+                "id": "ofn-buyer-subscriptions#11",
+                "content": "### **I would like to add/remove X from my regular order**\n\nThis is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.\n\n### **I would like to change my regular order to weekly rather than fortnightly.**\n\nThis is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.\n\n### **I’m going on holiday and don’t want my subscription for the next two weeks.**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 11
+                },
+                "score": 0.4803420342597563
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "new checkout",
+                "ranks": [
+                  1
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n[2] Some shops may allow customers to remove items from their orders or cancel them altogether, within a limited time frame.  In which case you will be sent two emails. The first will notify you that your automated order has been placed and give you a link to follow if you wish to change your order:\n\n[2] **warning:**\nAdding to your basket by following this link will generate a second order and you will be directed to the checkout to pay for your additional items separately from those in your subscription.\n\n[3] This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) and they can arrange the rest.\n\n[3] This is certainly possible. Just drop the shop where you have the subscription with an [email or phone call ](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)and they can arrange the rest.\n\n[1] **danger:**\nYou will not be able to add extra products to this basket though.",
+            "answer_group_coverage": [
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          },
+          "unfiltered": {
+            "top3": [
+              {
+                "id": "ofn-seller-subscriptions#7",
+                "content": "### **Add Products**\n\nAdd the items the customer wishes to receive from your enterprise on a regular basis.\n\n**warning:**\nYou can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.\n\n### Review & Save\n\nCheck that details are correct and then click **Create Subscription** or **Cancel**.\n\n**warning:**\nIf the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.\n\n#### **What happens if the price of a product changes after the subscription is made?**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 7
+                },
+                "score": 0.7012890372721334
+              },
+              {
+                "id": "ofn-seller-orders#10",
+                "content": "This is what the order management page looks like:\n\n#### **Adding and removing products from an order**\n\nYou can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n**Changing the Shipping Method**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 10
+                },
+                "score": 0.6506382600297075
+              },
+              {
+                "id": "ofn-seller-orders#16",
+                "content": "We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:\n\n**Start/End Date:** You can filter to display all orders that were placed within a given window of time.\n\n**Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 16
+                },
+                "score": 0.646371262031889
+              }
+            ],
+            "doc_rank": null,
+            "naive_doc_score": 0,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": []
+              },
+              {
+                "label": "new checkout",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] **warning:**\nYou can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.\n\n[2] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n[3] We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:\n\n[1] **warning:**\nIf the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.\n\n[2] This is what the order management page looks like:\n\n[1] Add the items the customer wishes to receive from your enterprise on a regular basis.",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [
+              "ofn-seller-subscriptions#7",
+              "ofn-seller-orders#10",
+              "ofn-seller-orders#16"
+            ],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q2": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-orders#15",
+                "content": "* grant a discount on an order if a product is damaged\n* deduct credit owed to the customer from their total balance\n* refund a customer\n* record a partial payment\n* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders\n\n## Bulk order management\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 15
+                },
+                "score": 0.6009667000599219
+              },
+              {
+                "id": "ofn-seller-refunds#12",
+                "content": "**info:**\nThe button for **+ New Payment** will only be visible if you have already added an adjustment (e.g. the payment state is 'credit owed')\n\n#### Stripe\nUsing the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.\n\n1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.\n2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.\n\n**danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 12
+                },
+                "score": 0.5967131149940463
+              },
+              {
+                "id": "ofn-seller-refunds#11",
+                "content": "Once the order has been amended to reflect either the missing/adjusted products or the new adjustment, the order will appear with the payment state of **‘Credit Owing’** for the amount the customer no longer needs to pay.\n\n**Process the Partial Refund**\nTo process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:\n\n#### Cash/BACS\n\n1. Arrange for the refund to be made to the customer independently of the platform.\n2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu, then '**+ New Payment**':\n\nEnter a **negative value** in the ‘Amount’ field to record the refund as having been made.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 11
+                },
+                "score": 0.551330783207875
+              }
+            ],
+            "doc_rank": 2,
+            "naive_doc_score": 1,
+            "required_groups": [
+              {
+                "label": "adjust balance first",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "tick refunds credit owed",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "X refunds whole payment",
+                "ranks": [
+                  2
+                ]
+              },
+              {
+                "label": "3-5 working days",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] **danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n[3] **Process the Partial Refund**\nTo process a partial refund of the amount that is now owed, see instructions by choosing the payment method from the following tabs:\n\n[3] 1. Arrange for the refund to be made to the customer independently of the platform.\n2. Record this action by going to **Orders -> Edit** and selecting ‘Payments’ from the right hand menu, then '**+ New Payment**':\n\n[1] * grant a discount on an order if a product is damaged\n* deduct credit owed to the customer from their total balance\n* refund a customer\n* record a partial payment\n* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders\n\n[2] Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.\n\n[2] 1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.\n2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.",
+            "answer_group_coverage": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q3": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-refunds#3",
+                "content": "**The customer has not yet paid for the item.**\nIf a customer places an order, selecting a payment method such as cash on collection or BACS and the payment has not been captured on the system it will appear as 'payment state: balance due':\n\nYou can [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) straight away following the steps below for 'Marking an order as cancelled'.\n\n**The customer has paid for the item.**\n\nWhen [viewing orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as 'payment state: paid' and the 'Shipment State: Ready':\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 3
+                },
+                "score": 0.7064145073763414
+              },
+              {
+                "id": "ofn-seller-refunds#7",
+                "content": "To refund the customer you will need to log into your [PayPal account](https://www.paypal.com/uk/home) and issue the money back to the customer’s account through Paypal's interface.\n\nOnce this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.\n\n#### Marking an order as cancelled\n\nOnce you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).\n\n**success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 7
+                },
+                "score": 0.6670204487645024
+              },
+              {
+                "id": "ofn-seller-refunds#6",
+                "content": "Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).\n\n#### PayPal\nPayment is collected automatically on checkout from the customer and so in [listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as:\n\n'Payment state = paid'\n\nGoing to the 'payments' screen from Orders -> Edit will show the payment method used:\n\n**danger:**\n**Orders placed and paid for via PayPal can not be refunded through the OFN platform.**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 6
+                },
+                "score": 0.6506327298033889
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "cannot cancel Shipped",
+                "ranks": []
+              },
+              {
+                "label": "refund before cancelling",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[3] Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).\n\n[2] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).\n\n[2] **success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n[1] You can [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) straight away following the steps below for 'Marking an order as cancelled'.\n\n[2] Once this has been done, you can [mark the order as cancelled](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled) using the steps below.\n\n[3] Payment is collected automatically on checkout from the customer and so in [listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) the order appears as:",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q4": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-subscriptions#6",
+                "content": "When orders close for that week/fortnight/month, you will be sent a second email confirming your final order contents and informing you that payment has been taken (if you are paying for your subscription by card- payment will not be automatically taken if you pay for your subscription by cash or bank transfer).\n\n## **Common questions**\n\n### **I pay by card for my subscription. When will the payment be taken?**\n\nThe shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 6
+                },
+                "score": 0.6611628225100091
+              },
+              {
+                "id": "ofn-buyer-subscriptions#2",
+                "content": "* The email address associated with your OFN account.\n* The items you would like to purchase on a regular basis.\n* Your preferred collection/delivery time/day for your regular order.\n* Your preferred method of payment for your regular order.\n* The frequency which you would like the order (weekly, fortnightly, monthly…)\n* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).\n\n**info:**\nYou will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.\n\n## **Paying for a Subscription by card**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 2
+                },
+                "score": 0.6209740192471533
+              },
+              {
+                "id": "ofn-buyer-subscriptions#8",
+                "content": "* Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.\n* Before your next order, [log into your OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#whats-in-your-account) and visit the 'Credit Cards' tab.  In the UK you can follow this link: <https://openfoodnetwork.org.uk/account#/cards>\n* Check that the 'Allow Charges to Default Card' box is checked next to the business with whom you have a subscription.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 8
+                },
+                "score": 0.5910750398577449
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "payment at cycle close",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "price can change",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] When orders close for that week/fortnight/month, you will be sent a second email confirming your final order contents and informing you that payment has been taken (if you are paying for your subscription by card- payment will not be automatically taken if you pay for your subscription by cash or bank transfer).\n\n[3] * Get [in touch](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact) with the business with whom you have a subscription and they will be able to let you know how to pay for this particular week's/month's order.\n* Before your next order, [log into your OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#whats-in-your-account) and visit the 'Credit Cards' tab.  In the UK you can follow this link: <https://openfoodnetwork.org.uk/account#/cards>\n* Check that the 'Allow Charges to Default Card' box is checked next to the business with whom you have a subscription.\n\n[1] The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.\n\n[2] * The email address associated with your OFN account.\n* The items you would like to purchase on a regular basis.\n* Your preferred collection/delivery time/day for your regular order.\n* Your preferred method of payment for your regular order.\n* The frequency which you would like the order (weekly, fortnightly, monthly…)\n* Start and end date (if you are giving a subscription as a gift you may like it to run for a limited time rather than indefinitely).\n\n[2] **info:**\nYou will need to register for an [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md) and have an active email address in order for the business to set your subscription up.",
+            "answer_group_coverage": [
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q5": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-subscriptions#8",
+                "content": "The prices of items within subscriptions will update and the customer will be charged according to the updated price.  At the start of each order cycle with which their subscription is generated they will receive an email with a summary of their order, including up-to-date prices.\n\n#### **What if a product in a subscription is not available in an order cycle?**\n\nWhen an item in a subscription is not available (for example if it is a seasonal product) the customer will be alerted in their confirmation emails.\n\n## Edit a customer’s subscription\n\n### Edit the base subscription\n\nTo make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 8
+                },
+                "score": 0.713389366065783
+              },
+              {
+                "id": "ofn-seller-subscriptions#7",
+                "content": "### **Add Products**\n\nAdd the items the customer wishes to receive from your enterprise on a regular basis.\n\n**warning:**\nYou can only add products which are listed in future order cycles for your enterprise which also belong to the customer's chosen subscription schedule.\n\n### Review & Save\n\nCheck that details are correct and then click **Create Subscription** or **Cancel**.\n\n**warning:**\nIf the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.\n\n#### **What happens if the price of a product changes after the subscription is made?**\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 7
+                },
+                "score": 0.6833112447644332
+              },
+              {
+                "id": "ofn-seller-subscriptions#9",
+                "content": "Select the enterprise with which the customer has a subscription from the drop-down menu.\n\nA table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:\n\n**success:**\nYou can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.\n\n**danger:**\nYou can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.\n\n### Edit one specific order\n\nIf you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.\n\n",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 9
+                },
+                "score": 0.6781023053785408
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "editable fields",
+                "ranks": [
+                  3
+                ]
+              },
+              {
+                "label": "recreate schedule",
+                "ranks": [
+                  3
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 1,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[3] **danger:**\nYou can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.\n\n[3] **success:**\nYou can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.\n\n[1] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\n[1] The prices of items within subscriptions will update and the customer will be charged according to the updated price.  At the start of each order cycle with which their subscription is generated they will receive an email with a summary of their order, including up-to-date prices.\n\n[3] If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.\n\n[2] **warning:**\nIf the schedule for which you have just created a customer's new subscription has an open order cycle then their first order will be generated immediately unless you change the 'Begins at' date to some point in the future.",
+            "answer_group_coverage": [
+              true,
+              true
+            ],
+            "answer_complete_by_markers": true,
+            "wrong_audience": [],
+            "provisional_extractive_score": 1,
+            "generative_llm_evaluated": false
+          }
+        }
+      },
+      "inputs_over_model_limit": 0
+    },
+    "heading": {
+      "count": 114,
+      "avg_length": 548.2543859649123,
+      "parameters": {
+        "chunk_size": 800
+      },
+      "queries": {
+        "Q1": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-faq#1",
+                "content": "# Frequently Asked Questions\n### **Can I change my order?**\n\nClicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n**danger:**\nYou will not be able to add extra products to this basket though.\n\n**BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!\n\nJust visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).",
+                "metadata": {
+                  "doc_id": "ofn-buyer-faq",
+                  "title": "Frequently Asked Questions",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Selected complete FAQ sections",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-faq.md",
+                  "chunk_index": 1
+                },
+                "score": 0.5909956311247466
+              },
+              {
+                "id": "ofn-buyer-subscriptions#13",
+                "content": "# Subscription Orders\n## **Common questions**\n### **Can I top up my order by adding extra products?**\n\nIf your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so that you are not paying twice!",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 13
+                },
+                "score": 0.5752235848136426
+              },
+              {
+                "id": "ofn-buyer-subscriptions#12",
+                "content": "# Subscription Orders\n## **Common questions**\n### **Can I top up my order by adding extra products?**\n\nYou can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 12
+                },
+                "score": 0.5562951406798696
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "new checkout",
+                "ranks": [
+                  1
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] Clicking on ‘Edit’ next to the order in question will bring up a summary of the order.  Here you will be able to change the quantity of each item or delete an unwanted product altogether.\n\n[3] You can certainly purchase more items each week from your local food enterprise.  These extra items will be added to a new order, however, which you will need to pay for via the [regular checkout system](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md#checkout).\n\n[2] If your local shop charges a small fixed fee per order for delivery/collection then get in touch with them (email and phone number can be found under ‘[Contact](https://guide.openfoodnetwork.org/shopping-with-open-food-network/the-people-and-businesses-who-make-grow-your-food.md#contact)’). They will be able to remove this fee for your top up second order for you, so that you are not paying twice!\n\n[1] **danger:**\nYou will not be able to add extra products to this basket though.\n\n[1] Just visit the shop front again and add the vital milk/bread/butter which you forgot to get in your first order and proceed through [checkout as normal](https://guide.openfoodnetwork.org/shopping-with-open-food-network/shopping-and-placing-an-order.md).\n\n[1] **BUT you can certainly purchase extra items-** how often do we all go to a shop and come away with everything except the item we went in to get?!",
+            "answer_group_coverage": [
+              true,
+              true
+            ],
+            "answer_complete_by_markers": true,
+            "wrong_audience": [],
+            "provisional_extractive_score": 2,
+            "generative_llm_evaluated": false
+          },
+          "unfiltered": {
+            "top3": [
+              {
+                "id": "ofn-seller-orders#12",
+                "content": "# Manage Orders\n## Listing orders\n### **Editing an order**\n#### **Adding and removing products from an order**\n\nYou can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n**Changing the Shipping Method**",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 12
+                },
+                "score": 0.646151569955908
+              },
+              {
+                "id": "ofn-seller-orders#18",
+                "content": "# Manage Orders\n## Listing orders\n### **Additional options available under 'Actions'**\n#### **Modify an Order or Record Partial Payment**\n\nClick on 'Adjustments' in the right hand menu (screen shot above).  On this page you can add or subtract from the order total by selecting the **+ New Adjustment button**.\n\nYou may wish to use this functionality to:\n\n* grant a discount on an order if a product is damaged\n* deduct credit owed to the customer from their total balance\n* refund a customer\n* record a partial payment\n* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 18
+                },
+                "score": 0.6431200025555066
+              },
+              {
+                "id": "ofn-seller-orders#19",
+                "content": "# Manage Orders\n## Bulk order management\n\nWe have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:\n\n**Start/End Date:** You can filter to display all orders that were placed within a given window of time.\n\n**Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 19
+                },
+                "score": 0.6424675503503176
+              }
+            ],
+            "doc_rank": null,
+            "naive_doc_score": 0,
+            "required_groups": [
+              {
+                "label": "cannot add to existing basket",
+                "ranks": []
+              },
+              {
+                "label": "new checkout",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] You can add a product to the order by selecting the variant you require from a drop down list of those available (at least 3 letters must be typed in to the field box 'Select Variant' for list of options to appear). To remove a product from an order click the rubbish bin icon on the right hand side of the product. You can also change the quantity of each item ordered. Remember to click the **update and recalculate fees** button to save changes (this will also update enterprise, shipping and payment method fees accordingly, where appropriate).\n\n[3] We have learned above that the [Listing Orders](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#listing-orders) tab presents a table of the **orders per customer**. The Bulk Order Management page, on the other hand, details all the products that were purchased in your orders. This functionality is useful for modifying multiple orders at once that may contain the same product (quantity change, product out of stock etc). The page looks like:\n\n[2] Click on 'Adjustments' in the right hand menu (screen shot above).  On this page you can add or subtract from the order total by selecting the **+ New Adjustment button**.\n\n[2] * grant a discount on an order if a product is damaged\n* deduct credit owed to the customer from their total balance\n* refund a customer\n* record a partial payment\n* see [Refunding and Adjusting Payments](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md) for more information about making adjustments to orders\n\n[3] **Start/End Date:** You can filter to display all orders that were placed within a given window of time.\n\n[3] **Producer:** You can filter for a given producer. This can narrow down the display, if you’re only interested in one product, supplied by one producer.",
+            "answer_group_coverage": [
+              false,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [
+              "ofn-seller-orders#12",
+              "ofn-seller-orders#18",
+              "ofn-seller-orders#19"
+            ],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q2": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-refunds#18",
+                "content": "# Refunds and Adjusting Payments\n## Refunds\n### Partial Refund\n#### Stripe\n\nUsing the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.\n\n1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.\n2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.\n\n**danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n**warning:**\nNote that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 18
+                },
+                "score": 0.6701911343093209
+              },
+              {
+                "id": "ofn-seller-refunds#21",
+                "content": "# Refunds and Adjusting Payments\n## Collecting Additional Payments\n\nFollow the steps above for [Partial refunds](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#partial-refund) to add extra items to a customer's order or make adjustments via the [Bulk Order Management](https://guide.openfoodnetwork.org/basic-features/products-1/group-buy-for-bulk-ordering.md#adjusting-orders-to-make-complete-batches) page.\n\nOrders will now display with the Payment State = ‘Balance Due’:\n\nTo record payment of the extra monies due visit [Orders -> Edit Order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and then ‘Payments’.\nSelect **+ New Payment** (top right hand blue button)",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 21
+                },
+                "score": 0.611987864423269
+              },
+              {
+                "id": "ofn-seller-refunds#8",
+                "content": "# Refunds and Adjusting Payments\n## Refunds\n### Total Refund\n#### Stripe\n\n**info:**\nNote that Stripe payments can take 3-5 working days to appear on a customer’s bank statement.\n\nOnce you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 8
+                },
+                "score": 0.6080153853464633
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "adjust balance first",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "tick refunds credit owed",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "X refunds whole payment",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "3-5 working days",
+                "ranks": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] **danger:**\nClicking the 'X' will **void the whole payment** and issue a **full refund** to the customer.\n\n[2] Follow the steps above for [Partial refunds](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#partial-refund) to add extra items to a customer's order or make adjustments via the [Bulk Order Management](https://guide.openfoodnetwork.org/basic-features/products-1/group-buy-for-bulk-ordering.md#adjusting-orders-to-make-complete-batches) page.\n\n[1] Using the OFN platform you can automatically refund a customer who paid by Stripe. This will directly process the refund to their credit or debit card.\n\n[1] 1. Visit **Orders -> Edit Order** and then select ‘Payments’ from the right hand menu.\n2. As you created the adjustment in the previous step, the payment screen will now say '**Credit Owed**' with the amount you specified. By clicking the tick next to the payment any credit owed to the customer will be automatically refunded.\n\n[3] Once you have issued a refund, follow the steps below to [cancel the order](https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments.md#marking-an-order-as-cancelled).\n\n[2] To record payment of the extra monies due visit [Orders -> Edit Order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and then ‘Payments’.\nSelect **+ New Payment** (top right hand blue button)",
+            "answer_group_coverage": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q3": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-refunds#12",
+                "content": "# Refunds and Adjusting Payments\n## Refunds\n### Total Refund\n#### Marking an order as cancelled\n\n**danger:**\nNote that you cannot cancel an order which has been marked as ‘Shipped’",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 12
+                },
+                "score": 0.7565792102680989
+              },
+              {
+                "id": "ofn-seller-orders#10",
+                "content": "# Manage Orders\n## Listing orders\n### **Changing the Payment and Shipment state of an order**\n#### Capturing a Payment\n\n**danger:**\nWhen a shop or hub manager updates the 'Shipment state' to 'shipped' ***this will automatically send the customer an email*** to say that their products have been shipped, irrespective of the shipping method. Hence it can cause confusion for orders due to be collected (rather than shipped).\nAnother source of potential confusion to be aware of is when customers pay for an order on collection. Updating the payment (and then shipping) status of the order after the goods have been collected will send an email to the customer, even though they have their goods in practice.",
+                "metadata": {
+                  "doc_id": "ofn-seller-orders",
+                  "title": "Manage Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/view-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "order-changes",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-orders.md",
+                  "chunk_index": 10
+                },
+                "score": 0.656202863931065
+              },
+              {
+                "id": "ofn-seller-refunds#11",
+                "content": "# Refunds and Adjusting Payments\n## Refunds\n### Total Refund\n#### Marking an order as cancelled\n\nOnce you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).\n\n**success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n**info:**\nCancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.",
+                "metadata": {
+                  "doc_id": "ofn-seller-refunds",
+                  "title": "Refunds and Adjusting Payments",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "refunds-policy",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-refunds.md",
+                  "chunk_index": 11
+                },
+                "score": 0.6367735055372746
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "cannot cancel Shipped",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "refund before cancelling",
+                "ranks": []
+              }
+            ],
+            "context_complete": false,
+            "content_score": 0,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[1] **danger:**\nNote that you cannot cancel an order which has been marked as ‘Shipped’\n\n[3] Once you have issued a refund, you can now cancel the order. [Edit the order](https://guide.openfoodnetwork.org/basic-features/orders/view-orders.md#editing-an-order) and select ‘Cancel Order’ under ‘Actions’ (top right hand blue button).\n\n[3] **success:**\nThe customer will receive an email to state that their order has been cancelled.\n\n[2] **danger:**\nWhen a shop or hub manager updates the 'Shipment state' to 'shipped' ***this will automatically send the customer an email*** to say that their products have been shipped, irrespective of the shipping method. Hence it can cause confusion for orders due to be collected (rather than shipped).\nAnother source of potential confusion to be aware of is when customers pay for an order on collection. Updating the payment (and then shipping) status of the order after the goods have been collected will send an email to the customer, even though they have their goods in practice.\n\n[3] **info:**\nCancelling an order will **automatically** **update stock levels**. For example, if a shop had five loaves of bread in stock and a customer ordered three, stock levels would show two in stock. Cancelling the customer's order automatically updates stock levels, such that five will again show as in stock.",
+            "answer_group_coverage": [
+              true,
+              false
+            ],
+            "answer_complete_by_markers": false,
+            "wrong_audience": [],
+            "provisional_extractive_score": 0,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q4": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-buyer-subscriptions#8",
+                "content": "# Subscription Orders\n## **Common questions**\n### **I pay by card for my subscription. When will the payment be taken?**\n\nThe shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 8
+                },
+                "score": 0.6978738341459026
+              },
+              {
+                "id": "ofn-buyer-subscriptions#3",
+                "content": "# Subscription Orders\n## **Paying for a Subscription by card**\n\nIf you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:\n\n**warning:**\nIf you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 3
+                },
+                "score": 0.6271279744785986
+              },
+              {
+                "id": "ofn-buyer-subscriptions#19",
+                "content": "# Subscription Orders\n## **Common questions**\n### **Will the cost of my subscription remain the same forever?**\n\nNo. The cost of your subscription will fluctuate based on the current price of the items within it.  This is to ensure small producers always receive a fair price for their products.",
+                "metadata": {
+                  "doc_id": "ofn-buyer-subscriptions",
+                  "title": "Subscription Orders",
+                  "source_url": "https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "buyer",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-buyer-subscriptions.md",
+                  "chunk_index": 19
+                },
+                "score": 0.6138614396808387
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "payment at cycle close",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "price can change",
+                "ranks": [
+                  3
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] If you would like to pay for your subscription order by card then it is necessary to add and save a card to your [OFN account](https://guide.openfoodnetwork.org/shopping-with-open-food-network/your-ofn-account.md#credit-cards) and tick the box to ‘Allow Charges?’ to the shop you would like the subscription with:\n\n[2] **warning:**\nIf you have **more than one card saved** in your account then it is the one with the ‘**default**’ box checked which will be debited when payment for your subscription order is requested.\n\n[1] The shop you purchase from on the OFN platform opens and closes periodically in what we call ‘order cycles’.  You will be sent an email to say your subscription order has been placed when the order cycle corresponding to your subscription opens (ie weekly, fortnightly, monthly).  Payment will be taken when the order cycle closes.\n\n[3] No. The cost of your subscription will fluctuate based on the current price of the items within it.  This is to ensure small producers always receive a fair price for their products.",
+            "answer_group_coverage": [
+              true,
+              true
+            ],
+            "answer_complete_by_markers": true,
+            "wrong_audience": [],
+            "provisional_extractive_score": 2,
+            "generative_llm_evaluated": false
+          }
+        },
+        "Q5": {
+          "filtered": {
+            "top3": [
+              {
+                "id": "ofn-seller-subscriptions#12",
+                "content": "# Subscriptions - Creating & Managing orders\n## Edit a customer’s subscription\n### Edit the base subscription\n\nTo make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\nSelect the enterprise with which the customer has a subscription from the drop-down menu.\n\nA table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:\n\n**success:**\nYou can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 12
+                },
+                "score": 0.7845096737002438
+              },
+              {
+                "id": "ofn-seller-subscriptions#13",
+                "content": "# Subscriptions - Creating & Managing orders\n## Edit a customer’s subscription\n### Edit the base subscription\n\n**danger:**\nYou can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 13
+                },
+                "score": 0.7218487440977053
+              },
+              {
+                "id": "ofn-seller-subscriptions#14",
+                "content": "# Subscriptions - Creating & Managing orders\n## Edit a customer’s subscription\n### Edit one specific order\n\nIf you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.\n\nThis will reveal all upcoming orders in the schedule, and you can then edit a specific order.\n\n**warning:**\nNote that you will be able to remove items from an order in this manner, but not add them. Additional items will need to be added by creating a new order as described [here](https://guide.openfoodnetwork.org/basic-features/orders/create-orders-manually.md).",
+                "metadata": {
+                  "doc_id": "ofn-seller-subscriptions",
+                  "title": "Subscriptions - Creating & Managing orders",
+                  "source_url": "https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders",
+                  "retrieved_at": "2026-09-20",
+                  "document_version": "not-stated",
+                  "audience": "seller",
+                  "category": "subscriptions",
+                  "language": "en",
+                  "license_or_permission": "CC-BY-SA-4.0",
+                  "attribution": "Open Food Network contributors",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "permission_source": "https://ofn-user-guide.gitbook.io/ofn-handbook/white-label-users",
+                  "source_format": "official-markdown",
+                  "extraction_scope": "Full article text; image assets omitted",
+                  "changes": "Removed documentation navigation and image assets; retained captions and warnings; converted tabs to headings; resolved links",
+                  "source": "data/ecommerce/ofn-seller-subscriptions.md",
+                  "chunk_index": 14
+                },
+                "score": 0.6980623703154358
+              }
+            ],
+            "doc_rank": 1,
+            "naive_doc_score": 2,
+            "required_groups": [
+              {
+                "label": "editable fields",
+                "ranks": [
+                  1
+                ]
+              },
+              {
+                "label": "recreate schedule",
+                "ranks": [
+                  2
+                ]
+              }
+            ],
+            "context_complete": true,
+            "content_score": 2,
+            "answer": "Các đoạn nguồn liên quan (trích xuất, chưa tổng hợp bằng LLM):\n[2] **danger:**\nYou can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted.\n\n[1] **success:**\nYou can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription.\n\n[1] To make changes to the whole subscription (ie all orders placed from now on for the customer) then visit **Orders** (main menu) -> **Subscriptions** (sub-menu).\n\n[3] If you want to change a single upcoming order in a subscription you can click on the number in the customers’ ***orders*** column.\n\n[1] A table listing all your customers' subscriptions will be then visible.   Select the Edit (pen and paper) icon to the right of the customer:\n\n[3] This will reveal all upcoming orders in the schedule, and you can then edit a specific order.",
+            "answer_group_coverage": [
+              true,
+              true
+            ],
+            "answer_complete_by_markers": true,
+            "wrong_audience": [],
+            "provisional_extractive_score": 2,
+            "generative_llm_evaluated": false
+          }
+        }
+      },
+      "inputs_over_model_limit": 0
+    }
+  },
+  "packages": {
+    "sentence-transformers": "5.6.0",
+    "torch": "2.14.0",
+    "transformers": "5.17.0"
+  }
+}

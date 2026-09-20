@@ -1,0 +1,44 @@
+[
+  {
+    "id": "Q1",
+    "query": "Can I add a new product to an order that has already been placed?",
+    "metadata_filter": {"audience": "buyer"},
+    "gold_answer": "As a buyer, contact the shop to change an order. For cash-on-collection or bank-transfer purchases, the shop may allow an OFN account holder to edit quantities or remove products for a limited time. A new product cannot be added to that existing basket: place a separate order and check out again. Contact the shop about removing a duplicate fixed delivery/collection fee.",
+    "evidence": [{"doc_id": "ofn-buyer-faq", "heading": "Can I change my order?", "quote": "You will not be able to add extra products to this basket though."}],
+    "conflicting_audience_doc": "ofn-seller-orders",
+    "filter_reason": "The seller's Manage Orders section permits adding a product to an existing order through the admin interface. The same query therefore needs the caller's buyer role; otherwise an answer using seller permissions is wrong.",
+    "status": "ready-for-benchmark"
+  },
+  {
+    "id": "Q2",
+    "query": "How does a seller issue a partial Stripe refund, what does the X button do, and how long can the refund take to appear?",
+    "metadata_filter": {"audience": "seller"},
+    "gold_answer": "First amend the order or add a negative adjustment to produce Credit Owed. In Orders -> Edit Order -> Payments, click the tick next to the payment to refund the credit owed. X voids the entire payment and gives a full refund. Stripe payments can take 3-5 working days to appear on the customer's bank statement.",
+    "evidence": [{"doc_id": "ofn-seller-refunds", "heading": "Partial Refund", "quote": "Clicking the 'X' will **void the whole payment** and issue a **full refund** to the customer."}, {"doc_id": "ofn-seller-refunds", "heading": "Partial Refund", "quote": "Note that Stripe payments can take 3-5 working days to appear on a customer’s bank statement."}],
+    "status": "ready-for-benchmark"
+  },
+  {
+    "id": "Q3",
+    "query": "Can a seller cancel an order marked Shipped, and should refunds be processed before cancellation?",
+    "metadata_filter": {"audience": "seller"},
+    "gold_answer": "An order marked Shipped cannot be cancelled. Process refunds or adjustments before cancelling: a cancelled order cannot be edited or refunded.",
+    "evidence": [{"doc_id": "ofn-seller-refunds", "heading": "Marking an order as cancelled", "quote": "Note that you cannot cancel an order which has been marked as ‘Shipped’"}, {"doc_id": "ofn-seller-orders", "heading": "Additional options available under 'Actions'", "quote": "A cancelled order can not be edited or refunded."}],
+    "status": "ready-for-benchmark"
+  },
+  {
+    "id": "Q4",
+    "query": "When is card payment taken for a subscription, and is the subscription price fixed forever?",
+    "metadata_filter": {"audience": "buyer"},
+    "gold_answer": "The subscription order is placed when its order cycle opens; card payment is taken when the cycle closes. The subscription price reflects current item prices and can fluctuate rather than staying at its original price.",
+    "evidence": [{"doc_id": "ofn-buyer-subscriptions", "heading": "I pay by card for my subscription. When will the payment be taken?", "quote": "Payment will be taken when the order cycle closes."}, {"doc_id": "ofn-buyer-subscriptions", "heading": "Will the cost of my subscription remain the same forever?", "quote": "No. The cost of your subscription will fluctuate based on the current price of the items within it."}],
+    "status": "ready-for-benchmark"
+  },
+  {
+    "id": "Q5",
+    "query": "List the subscription details a seller can edit. How must a change to the subscription schedule be handled?",
+    "metadata_filter": {"audience": "seller"},
+    "gold_answer": "A seller can change subscription products, preferred shipping and payment methods, and start/end dates. The schedule cannot be changed directly: recreate the subscription in the preferred schedule and delete the old version.",
+    "evidence": [{"doc_id": "ofn-seller-subscriptions", "heading": "Edit the base subscription", "quote": "You can change the products the customer orders via subscription, their preferred shipping and payment methods and the start/end dates of their subscription."}, {"doc_id": "ofn-seller-subscriptions", "heading": "Edit the base subscription", "quote": "You can not change the schedule of the customer's subscription. Instead the subscription must be recreated in the new preferred schedule and the old version deleted."}],
+    "status": "ready-for-benchmark"
+  }
+]

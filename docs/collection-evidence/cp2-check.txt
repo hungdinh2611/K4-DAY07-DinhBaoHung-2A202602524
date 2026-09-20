@@ -1,0 +1,12 @@
+OK ofn-buyer-faq.md: metadata, manifest, source HTTP 200, body hash, headings
+OK ofn-buyer-subscriptions.md: metadata, manifest, source HTTP 200, body hash, headings
+OK ofn-seller-orders.md: metadata, manifest, source HTTP 200, body hash, headings
+OK ofn-seller-refunds.md: metadata, manifest, source HTTP 200, body hash, headings
+OK ofn-seller-subscriptions.md: metadata, manifest, source HTTP 200, body hash, headings
+OK files: 5; sources.csv and urls.csv match 1:1
+OK audience: {'buyer': 2, 'seller': 3}
+OK request delay: minimum 1.100s (after previous response)
+OK 5 benchmark specifications: all evidence quotes and headings exist
+OK buyer/seller contrast for Q1: cannot add vs admin can add
+SCOPE: source validation only; benchmark runs are recorded separately in report/cp5/
+PENDING: real member names and role confirmation, as requested by user

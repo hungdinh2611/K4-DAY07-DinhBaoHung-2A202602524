@@ -1,0 +1,6 @@
+doc_id,file_path,title,source_url,retrieved_at,document_version,license_or_permission
+ofn-buyer-faq,data/ecommerce/ofn-buyer-faq.md,Frequently Asked Questions,https://guide.openfoodnetwork.org/shopping-with-open-food-network/frequently-asked-questions,2026-09-20,not-stated,CC-BY-SA-4.0
+ofn-buyer-subscriptions,data/ecommerce/ofn-buyer-subscriptions.md,Subscription Orders,https://guide.openfoodnetwork.org/shopping-with-open-food-network/regular-automated-orders,2026-09-20,not-stated,CC-BY-SA-4.0
+ofn-seller-refunds,data/ecommerce/ofn-seller-refunds.md,Refunds and Adjusting Payments,https://guide.openfoodnetwork.org/basic-features/orders/refunds-and-adjusting-payments,2026-09-20,not-stated,CC-BY-SA-4.0
+ofn-seller-orders,data/ecommerce/ofn-seller-orders.md,Manage Orders,https://guide.openfoodnetwork.org/basic-features/orders/view-orders,2026-09-20,not-stated,CC-BY-SA-4.0
+ofn-seller-subscriptions,data/ecommerce/ofn-seller-subscriptions.md,Subscriptions - Creating & Managing orders,https://guide.openfoodnetwork.org/basic-features/subscriptions/subscriptions-creating-and-managing-orders,2026-09-20,not-stated,CC-BY-SA-4.0
